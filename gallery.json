@@ -1,0 +1,68 @@
+{
+    "GaneshUtsav": [
+      {"id":"","src": "./images/event.jpg", "alt": "Image 1"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 2"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+      {"id":"","src": "./images/event.jpg", "alt": "Image 4"}
+    ],
+    "Aarambh": [
+      {"id":"1","src": "./images/Gallery/Aarambh/1.webp", "alt": "Image 1"},
+      {"id":"2","src": "./images/Gallery/Aarambh/2.webp", "alt": "Image 1"},
+      {"id":"3","src": "./images/Gallery/Aarambh/3.jpg", "alt": "Image 1"},
+      {"id":"4","src": "./images/Gallery/Aarambh/4.webp", "alt": "Image 1"},
+      {"id":"5","src": "./images/Gallery/Aarambh/5.webp", "alt": "Image 1"},
+      {"id":"6","src": "./images/Gallery/Aarambh/6.webp", "alt": "Image 1"},
+      {"id":"7","src": "./images/Gallery/Aarambh/7.webp", "alt": "Image 1"},
+      {"id":"8","src": "./images/Gallery/Aarambh/8.webp", "alt": "Image 1"},
+      {"id":"9","src": "./images/Gallery/Aarambh/9.webp", "alt": "Image 1"},
+      {"id":"10","src": "./images/Gallery/Aarambh/10.webp", "alt": "Image 1"},
+      {"id":"11","src": "./images/Gallery/Aarambh/11.webp", "alt": "Image 1"},
+      {"id":"12","src": "./images/Gallery/Aarambh/12.jpg", "alt": "Image 1"},
+      {"id":"13","src": "./images/Gallery/Aarambh/13.jpg", "alt": "Image 1"},
+      {"id":"14","src": "./images/Gallery/Aarambh/14.jpg", "alt": "Image 1"},
+      {"id":"15","src": "./images/Gallery/Aarambh/15.webp", "alt": "Image 1"},
+      {"id":"16","src": "./images/Gallery/Aarambh/16.webp", "alt": "Image 1"}
+      
+    ],
+    "Bharari":[
+        {"id":"","src": "./images/event.jpg", "alt": "Image 1"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 2"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 4"}
+    ],
+    "Shivjayanti":[
+        {"id":"","src": "./images/event.jpg", "alt": "Image 1"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 2"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 4"}
+    ],
+    "Trip":[
+        {"id":"","src": "./images/event.jpg", "alt": "Image 1"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 2"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 4"}
+    ],
+    "General":[
+        {"id":"","src": "./images/event.jpg", "alt": "Image 1"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 2"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 4"}
+    ],
+    "foodfest":[
+        {"id":"","src": "./images/event.jpg", "alt": "Image 1"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 2"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 3"},
+        {"id":"","src": "./images/event.jpg", "alt": "Image 4"}
+    ]
+  }

@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 nav{
     position: fixed;
     z-index: 4;
@@ -69,7 +72,10 @@ nav{
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
 .main-screen{
-    background-color: #b000fe;
+    /* background-color: #b000fe; */
+    background: url('./images/Gallery/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     height: 70rem;
     display: flex;

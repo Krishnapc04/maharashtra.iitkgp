@@ -1,0 +1,134 @@
+:root{
+    --tab-bg:rgb(233, 202, 156);
+}
+
+.gallery{
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1{
+        text-align: center;
+    }
+}
+
+
+.tabpannel{
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    height: 3rem;
+    width: 97%;
+
+}
+.tabsr{
+  display: flex;
+    justify-content: space-evenly;
+    min-width: 700px;
+    white-space: nowrap; /* Prevent text wrapping to a new line */
+    height: 3rem;
+    align-items: center;
+    & div{
+        cursor: pointer;
+        border-bottom: 3px solid black;
+        transition: all linear .3s;
+        padding: 3px 11px;
+        border-radius: 20px;
+        &:hover{
+            background-color: rgb(245, 220, 188) !important;
+        }
+    }
+
+}
+.gallery-start{
+    width: 100%;
+    margin: 2rem .5rem;
+    & img{
+        width: 19rem;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px black;
+        cursor: pointer;
+        scale: .98;
+        transition: all linear .3s;
+        &:hover{
+            scale: 1;
+        }
+    }
+    & h2{
+        text-align: center;
+    }
+}
+.g-images{
+    display: grid;
+    justify-items: center;
+    row-gap: 1.3rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+}
+.hide{
+    display: none !important;
+}
+.sec-part{
+    margin: 3rem 0;
+}
+
+@media (width<333px){
+    .gallery-start{
+        & img{
+            width: 80vw;
+        }
+    }
+}
+
+
+
+.imgmodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    background: rgba(34, 32, 32, 0.467);
+    justify-content: center;
+    & img{
+        max-width: 90%;
+        margin: auto;
+        max-height: 80vh;
+        
+    }
+    padding-top: 2rem;
+}
+.close{
+    font-size: 2.4rem;
+    cursor: pointer;
+    /* background-color: aliceblue; */
+    transition: all linear .2s ;
+    font-weight: 800;
+    &:hover{
+        color: blue;
+        scale: 1.02;
+    }
+}
+.g-btn{
+    padding: 0 1rem;
+    display: flex;
+    justify-content:end;
+    padding-right: 2rem;
+}
+.download{
+    padding: .5rem 1rem;
+    /* background-color: aliceblue; */
+
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1.75rem;
+}
+.modalimg{
+    display: grid;
+}

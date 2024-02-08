@@ -1,0 +1,128 @@
+.img img{
+    width: 11rem;
+    /* height: 11rem; */
+    /* aspect-ratio: 1; */
+    
+    /* margin-top: 15rem; */
+}
+
+.heading{
+    position: absolute;
+    top: 9.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+}
+
+.our-team{
+    padding: 2rem;
+    padding-top: 15rem;
+    background: linear-gradient(to bottom right,rgba(234, 177, 63, 0.821),rgba(149, 37, 27, 0.749), rgba(92, 24, 251, 0.917)); 
+    /* background: url('./images/Gallery/1.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* z-index: -1; */
+
+    & h2{
+        text-align: center;
+        margin-top: 5rem;
+    }
+    & h3{
+        border-bottom: 2px solid black;
+    }
+}
+.img{
+    border-radius: 50%;
+    overflow: hidden;
+    color: white;
+    width: 10rem;
+    aspect-ratio: 1;
+    /* margin-top: 15rem;     */
+    border: 2px solid rgb(187, 118, 118);
+    box-shadow: 0px 0px 15px rgb(68, 68, 68);
+    transition: all linear .3s;
+    /* transition: border-radius linear .55s; */
+}
+.info{
+    position: absolute;
+    top: 100%;
+    border-bottom: 2px solid black;
+    transition: all linear .3s;
+    /* margin-left: .5rem; */
+    text-align: center;
+    margin-top: 1.2rem;
+    width: 10rem;
+}
+.cardanimation{
+    &:hover{
+        height: 25rem;
+        /* box-shadow: 1px 1px 10px black; */
+    }
+    &:hover .img{
+        /* box-shadow: 0 0 0 13rem blue; */
+        border-radius: 0;
+        z-index: 2;
+
+    }
+    &:hover .info{
+        top: 17.2rem;
+    }
+}
+
+
+.show-info{
+    & h3{
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: 700;
+    }
+}
+.team-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+.mycard {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    max-width: 17rem;
+    margin: auto;
+    height: 25rem;
+    transition: all linear .3s;
+    & h3{
+        border: 0;
+    }
+
+   
+}
+.logos{
+    font-size: 1.5rem;
+    display: flex;
+    border-top: 2px solid black;
+
+    justify-content: space-around;
+    margin-top: 16px;
+    & a{
+        color: black;
+        transition: all .3s;
+        &:hover{
+            color: rgb(34, 22, 204);
+            scale: 1.1;
+        }
+    }
+}
+.cardback{
+    transition: all linear .5s;
+    background: linear-gradient(to right, orange, red, blue);
+}
+.show-info h4{
+    width: 160px;
+    text-align: center;
+    margin-top: 1rem !important;
+}
