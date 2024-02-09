@@ -100,6 +100,45 @@ fetch('gallery.json')
                 id=image.id
                 idx = findIndexInObject(data[eventname],id)
                 currentindex=idx
+
+                let startX = 0;
+                let startY = 0;
+                let endX = 0;
+                let endY = 0;
+
+                // Detect swipe direction and navigate accordingly
+                document.addEventListener('touchstart', e => {
+                    startX = e.touches[0].clientX;
+                    startY = e.touches[0].clientY;
+                });
+
+                document.addEventListener('touchend', e => {
+                    endX = e.changedTouches[0].clientX;
+                    endY = e.changedTouches[0].clientY;
+                    
+                    const deltaX = endX - startX;
+                    const deltaY = endY - startY;
+                    
+                    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                        // Horizontal swipe detected
+                        if (deltaX > 0) {
+                            currentindex= parseInt(currentindex) + 1;
+                            
+                            if(currentindex>allimages.length-1){
+                                    currentindex=0
+                                }
+                                enlargeimage(allimages[currentindex].src);
+                            // Swipe right
+                            // navigate('right');
+                        } else {
+                            // Swipe left
+                            currentindex=  (currentindex - 1 + allimages.length) % allimages.length;
+                        
+                            enlargeimage(allimages[currentindex].src)
+                            // navigate('left');
+                        }
+                    }
+                });
             })
 
         });
@@ -303,6 +342,47 @@ fetch('gallery.json')
                 idx = findIndexInObject(data[eventname],id)
                 currentindex=idx
 
+
+                    // MOUSE MOVEMENT 
+                let startX = 0;
+                let startY = 0;
+                let endX = 0;
+                let endY = 0;
+
+                // Detect swipe direction and navigate accordingly
+                document.addEventListener('touchstart', e => {
+                    startX = e.touches[0].clientX;
+                    startY = e.touches[0].clientY;
+                });
+
+                document.addEventListener('touchend', e => {
+                    endX = e.changedTouches[0].clientX;
+                    endY = e.changedTouches[0].clientY;
+                    
+                    const deltaX = endX - startX;
+                    const deltaY = endY - startY;
+                    
+                    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                        // Horizontal swipe detected
+                        if (deltaX > 0) {
+                            currentindex= parseInt(currentindex) + 1;
+                            
+                            if(currentindex>allimages.length-1){
+                                    currentindex=0
+                                }
+                                enlargeimage(allimages[currentindex].src);
+                            // Swipe right
+                            // navigate('right');
+                        } else {
+                            // Swipe left
+                            currentindex=  (currentindex - 1 + allimages.length) % allimages.length;
+                        
+                            enlargeimage(allimages[currentindex].src)
+                            // navigate('left');
+                        }
+                    }
+                });
+
             })
         });
         
@@ -328,44 +408,7 @@ fetch('gallery.json')
        
     })
     // Variables to keep track of touch start and end positions
-let startX = 0;
-let startY = 0;
-let endX = 0;
-let endY = 0;
 
-// Detect swipe direction and navigate accordingly
-document.addEventListener('touchstart', e => {
-    startX = e.touches[0].clientX;
-    startY = e.touches[0].clientY;
-});
-
-document.addEventListener('touchend', e => {
-    endX = e.changedTouches[0].clientX;
-    endY = e.changedTouches[0].clientY;
-    
-    const deltaX = endX - startX;
-    const deltaY = endY - startY;
-    
-    if (Math.abs(deltaX) > Math.abs(deltaY)) {
-        // Horizontal swipe detected
-        if (deltaX > 0) {
-            currentindex= parseInt(currentindex) + 1;
-            
-            if(currentindex>allimages.length-1){
-                    currentindex=0
-                }
-                enlargeimage(allimages[currentindex].src);
-            // Swipe right
-            // navigate('right');
-        } else {
-            // Swipe left
-            currentindex=  (currentindex - 1 + allimages.length) % allimages.length;
-           
-            enlargeimage(allimages[currentindex].src)
-            // navigate('left');
-        }
-    }
-});
 
 // Function to navigate between images
 // function navigate(direction) {
