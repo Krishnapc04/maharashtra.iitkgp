@@ -98,8 +98,14 @@ fetch('gallery.json')
             imgelement.addEventListener('click',()=>{
                 enlargeimage(imgelement.src)
                 id=image.id
-                idx = findIndexInObject(data[eventname],id)
+                idx = findIndexInObject(data.GaneshUtsav,id)
                 currentindex=idx
+
+                closebtn.addEventListener('click',()=>{
+                    imgmodal.classList.add('hide')
+                })
+                const downloadlink = document.getElementById('downloadLink')
+                downloadlink.href=image.src
 
                 let startX = 0;
                 let startY = 0;
@@ -342,7 +348,11 @@ fetch('gallery.json')
                 idx = findIndexInObject(data[eventname],id)
                 currentindex=idx
 
-
+                closebtn.addEventListener('click',()=>{
+                    imgmodal.classList.add('hide')
+                })
+                const downloadlink = document.getElementById('downloadLink')
+                downloadlink.href=image.src
                     // MOUSE MOVEMENT 
                 let startX = 0;
                 let startY = 0;
@@ -423,11 +433,9 @@ fetch('gallery.json')
 
 
 // image slideshow 
-closebtn.addEventListener('click',()=>{
-    imgmodal.classList.add('hide')
-})
 
 
 
-const downloadlink = document.getElementById('downloadLink')
-downloadlink.href='./images/event.jpg'
+
+// const downloadlink = document.getElementById('downloadLink')
+// downloadlink.href='./images/event.jpg'

@@ -1,0 +1,71 @@
+.about{
+    padding-top: 5rem;
+
+}
+.about-us{
+    padding: 7rem 1rem 10rem;
+    position: relative;
+    background: url('./images/Gallery/1.png');
+    /* min-height:80vh; */
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 7rem;
+    & p{
+        width: 88%;
+    }
+    & h1{
+        /* text-decoration: underline; */
+        
+        &::first-letter{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+    }
+}
+.motto, .vission{
+    margin-top: 3rem;
+    display: grid;
+    margin: auto;
+    margin-bottom: 7rem;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    grid-template-columns: 1fr 4fr;
+    background-color: rgb(218, 209, 176);
+    width: 95%;
+    box-shadow: 1px 1px 10px black;
+    align-items: center;
+    justify-items: center;
+    transition: all linear .5s;
+    & p{
+        width: 88%;
+    }
+    & h1{
+        border-bottom: 3px solid black;
+        padding: 4px 12px;
+    }
+    &:hover{
+        background-color: rgb(255, 245, 213);
+
+    }
+}
+.vission{
+    grid-template-columns: 4fr 1fr  ;
+}
+@media (width<680px){
+    .motto{
+        grid-template-rows: 1fr 4fr !important;
+        grid-template-columns: none;
+    }
+    .vission {
+        grid-template-rows: 1fr 4fr  ;
+        grid-template-columns: none;
+        & h1{
+            order: 1;
+
+        }
+        & p{
+            order: 2;
+        }
+    }
+}
