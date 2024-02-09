@@ -308,12 +308,15 @@ gallery.forEach((e)=>{
 // let currentindex=0
 const imgmodal = document.getElementById('imageModal')
 const imgmodalimg = document.querySelector('.modalimg')
+const downloadlink = document.getElementById('downloadLink')
+
 // console.log(typeof(imgmodalimg))
 // console.log(imgmodalimg.innerHTML)
 const closebtn = document.querySelector('.close')
 function enlargeimage (src){
     imgmodal.classList.remove('hide')
-   
+    downloadlink.href=src
+
     imgmodalimg.innerHTML=` <img src="${src} " alt="event">`
    
 }
@@ -351,8 +354,7 @@ fetch('gallery.json')
                 closebtn.addEventListener('click',()=>{
                     imgmodal.classList.add('hide')
                 })
-                const downloadlink = document.getElementById('downloadLink')
-                downloadlink.href=image.src
+                // downloadlink.href=image.src
                     // MOUSE MOVEMENT 
                 let startX = 0;
                 let startY = 0;
@@ -386,7 +388,7 @@ fetch('gallery.json')
                         } else {
                             // Swipe left
                             currentindex=  (currentindex - 1 + allimages.length) % allimages.length;
-                        
+                            downloadlink.href=allimages[currentindex].src
                             enlargeimage(allimages[currentindex].src)
                             // navigate('left');
                         }
