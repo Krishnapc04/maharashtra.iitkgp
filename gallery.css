@@ -61,6 +61,7 @@
     justify-items: center;
     row-gap: 1.3rem;
     justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
 }

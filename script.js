@@ -94,6 +94,7 @@ fetch('gallery.json')
             const imgelement = document.createElement('img');
             imgelement.src = image.src;
             imgelement.alt = image.alt;
+            imgelement.loading='lazy'
             e.appendChild(imgelement);
             imgelement.addEventListener('click',()=>{
                 enlargeimage(imgelement.src)
@@ -343,6 +344,7 @@ fetch('gallery.json')
             const imgelement = document.createElement('img');
             imgelement.src = image.src;
             imgelement.alt = image.alt;
+            imgelement.loading='lazy'
             e.appendChild(imgelement);
             imgelement.addEventListener('click',()=>{
                 enlargeimage(imgelement.src)
@@ -419,13 +421,6 @@ fetch('gallery.json')
         }
        
     })
-    // Variables to keep track of touch start and end positions
-
-
-// Function to navigate between images
-// function navigate(direction) {
-//     // Your navigation logic here
-// }
 
 
     
@@ -434,10 +429,3 @@ fetch('gallery.json')
 }
 
 
-// image slideshow 
-
-
-
-
-// const downloadlink = document.getElementById('downloadLink')
-// downloadlink.href='./images/event.jpg'
