@@ -1,7 +1,6 @@
 const galleryDisplayContainerSection1 = document.getElementById('gallery-display-container-section-1');
 const galleryDisplayContainerSection2 = document.getElementById('gallery-display-container-section-2');
 // Add more variables for additional sections as needed
-
 var gridItemsSection1;
 var gridItemsSection2;
 // Add more variables for additional sections as needed
