@@ -22,6 +22,7 @@
     margin-top: 2rem;
     overflow-x: auto;
     padding: 0 5%; 
+    align-items: center;
 }
 
 .eventbtn {
@@ -101,7 +102,8 @@
 }
 
 .eventdes {
-    transition: transform 0.5s ease;
+    opacity: 0;
+    transition: all 0.5s ease;
     transform: translateX(-85%);
     width: 35%; 
     margin-right: 3%; 
@@ -116,8 +118,10 @@
   
    
     .combo:hover .eventdes {
+
       transform: translateX(-15%);
       overflow-y: auto; 
+      opacity: 1;
     }
   }
 
@@ -154,6 +158,7 @@
         margin-bottom: 3rem;
         margin-top: 1.5rem;
        padding-left: 1.5rem;
+       opacity: 1;
         
         
     }
