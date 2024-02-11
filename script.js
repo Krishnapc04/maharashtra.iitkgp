@@ -6,7 +6,7 @@ const navlink = document.querySelectorAll(".nav-option .opts");
 let myarray = Array.from(navlink);
 
 
-if (activepage == "/MHM-Project/") {
+if (activepage == "/maharashtra.iitkgp/") {
   myarray.forEach((link) => {
     if (link.firstChild.href.includes(`${activepage}`)) {
       link.classList.remove("active");
