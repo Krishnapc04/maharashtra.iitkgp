@@ -1,3 +1,13 @@
+// AOS.init({
+//     offset:260,
+//     duration:700,
+//   });
+
+
+
+
+
+
 const activepage = window.location.pathname;
 const navlink = document.querySelectorAll(".nav-option .opts");
 

@@ -35,18 +35,20 @@
 
 
 .eventimg {
-    width: 40%; 
+    width: 35%; 
     z-index: 2;
 }
 
 .evimg {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 1px 1px 4px black;
+    /* box-shadow: 1px 1px 4px black; */
     cursor: pointer;
     margin-bottom: 3rem;
     margin-top: 1.5rem;
     z-index: 1;
+    filter: drop-shadow(2px 1px 6px white);
+
 }
 
   
@@ -78,23 +80,25 @@
 
     
 .eventimg {
-    width: 40%; 
+    width: 35%; 
     transition: transform 0.5s ease;
-    transform: translateX(70%);
+    transform: translateX(100%);
     z-index: 2;
-    margin-left: 3%;
+    /* margin: auto; */
 }
 
 .evimg {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 1px 1px 4px black;
+    /* box-shadow: 1px 1px 4px black; */
     cursor: pointer;
     transform: scale(.98);
     transition: all linear .3s;
     margin-bottom: 3rem;
     margin-top: 1.5rem;
     z-index: 1;
+    filter: drop-shadow(2px 1px 6px white);
+
 }
 
 .evimg:hover {
@@ -105,15 +109,15 @@
     opacity: 0;
     transition: all 0.5s ease;
     transform: translateX(-85%);
-    width: 35%; 
-    margin-right: 3%; 
+    width: 50%; 
+    margin-right: -2rem; 
     margin-bottom: 3rem;
     margin-top: 1.5rem;
     
 }
 
     .combo:hover .eventimg {
-      transform: translateX(15%);
+      transform: translateX(25%);
     }
   
    
@@ -132,23 +136,27 @@
         flex-direction: column;
         justify-content: center;
         margin-top: 2rem;
+        margin: auto;
+        width: 96%;
+        border-radius: 10px;
     }
 
     .eventimg {
-        width: 100%;
+        /* width: 48%; */
         display: flex;
         justify-content: center;
         z-index: 2;
     }
     
     .evimg {
-        width: 100%;
+        width: 17rem;
         border-radius: 5px;
-        box-shadow: 1px 1px 4px black;
+        /* box-shadow: 1px 1px 4px black; */
         cursor: pointer;
         margin-bottom: 3rem;
         margin-top: 1.5rem;
         z-index: 1;
+        filter: drop-shadow(2px 1px 6px white);
     }
     
     
@@ -156,7 +164,7 @@
     .eventdes {
         width: 100%; 
         margin-bottom: 3rem;
-        margin-top: 1.5rem;
+        margin-top: -1.5rem;
        padding-left: 1.5rem;
        opacity: 1;
         

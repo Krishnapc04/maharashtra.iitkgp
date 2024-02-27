@@ -6,6 +6,7 @@
     <title>Maharashta Mandal</title>
     <link rel="icon" type="image/x-icon" href="./images/MM-Logo-2.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
@@ -16,7 +17,7 @@
         <div class="mh-navbar">
             <a href=""><img src="./images/MM-Logo-2.png" alt="logo"></a>
             <div class="nav-headi">
-                <h3>Maharashtra Mandal IIT KHARAGPUR</h3>
+                <h3>Maharashtra Mandal</h3> <p>IIT KHARAGPUR</p>
             </div>
             <div class="nav-bars">
                 <i class="fa-solid fa-bars"></i>
@@ -57,16 +58,16 @@
 
     <section class="recent-events">
         <h1>Recent Events</h1>
-        <div class="event-1">
+        <div class="event-1" data-aos="fade-left" >
             <div class="E-1-heading">
                 <h2>GaneshUtsav</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet debitis error, optio laborum, repellat dolorum aliquid vero impedit quam architecto doloribus recusandae explicabo iste! Ut earum amet tenetur dicta facilis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quis earum veritatis blanditiis. Tenetur aspernatur facere illo modi reiciendis doloremque.</p>
             </div>
-            <div class="E-1-img">
+            <div class="E-1-img" >
                 <img src="./images/event.jpg" alt="Event image">
             </div>
         </div>
-        <div class="event-2">
+        <div class="event-2"data-aos="fade-right">
             <div class="E-2-heading">
                 <h2>Event 1</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet debitis error, optio laborum, repellat dolorum aliquid vero impedit quam architecto doloribus recusandae explicabo iste! Ut earum amet tenetur dicta facilis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quis earum veritatis blanditiis. Tenetur aspernatur facere illo modi reiciendis doloremque.</p>
@@ -78,6 +79,58 @@
     </section>
 
 
+<!-- -----------------------------------------------------------UPCOMING EVENTS ------------------------------------------------------------------------------------------ -->
+
+    <section class="upcoming">
+        <h1>Upcoming Events</h1>
+        <div class="up-event">
+            <h2>Food Fest</h2>
+            <div class="event">
+                <img src="./images/event.jpg" alt="Event Image">
+                <div class="up-card">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, id quas necessitatibus deserunt nulla amet vero modi, neque assumenda ipsa reprehenderit harum dolorum ut deleniti molestias. Veniam magni soluta magnam.</p>
+                    <p><i class="far fa-calendar-alt"></i>  : 12/12/2022</p>
+                    <button class="show-event"><a href="event.html#Fest">Show More</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------------------- FOOTER ----------------------------------------------------------------------------------------------------- -->
+
+    <section class="footer">
+        <div class="ft-img">
+            <img src="./images/MM-Logo-2.png" alt="Footer image">
+            <h3>Maharashtra Mandal</h3>
+        </div>
+        <div class="ft-info">
+            <p><i class="fas fa-map-marker-alt fa-lg"></i> : IIT KHARAGPUR</p>
+            <p><a href="tel:+91-8767650199" target="blank" ><i class="fa-solid fa-phone"></i> - 8767650199 </a></p>
+            <p><a href="mailto:iitkgpmaharashtramandal@gmail.com"><i class="fa-solid fa-envelope"></i>: iitkgpmaharashtramandal@gmail.com</a> </p>
+            <div class="ft-icons">
+                <p><a href="https://www.instagram.com/iitkgp.maharashtra/"><i class="fab fa-instagram"></i></a></p>
+                <p><a href="https://www.facebook.com/groups/467661766693848"><i class="fab fa-facebook-square"></i></a>  </p>
+                <p><a href="https://www.linkedin.com/company/maharashtra-mandal-iit-kharagpur/?viewAsMember=true"><i class="fab fa-linkedin"></i></a> </p>
+            </div>
+        
+        </div>
+        <div class="ft-links">
+            <h3>Quick Links</h3>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="event.html">Events</a></p>
+            <p><a href="gallery.html">Gallery</a></p>
+            <!-- <p><a href="contact.html">Contact</a></p> -->
+            <p><a href="team.html">Team</a></p>
+
+        </div>
+        <p class="copyright">All Right Reserved</p>
+    </section>
+
+<!-- --------------------------------------------TOP---------------------------------------- -->
+<div class="top">
+    <a href="index.html"><img src="images/up.gif" alt="Go Up"></a>
+</div>
 
 
 
@@ -85,5 +138,12 @@
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/eff83eab75.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:260,
+    duration:700,
+  });
+</script>
 </body>
 </html>
